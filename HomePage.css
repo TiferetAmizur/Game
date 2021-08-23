@@ -1,0 +1,7 @@
+﻿body {
+    /*background-image: url('imgs/disneylend.gif');*/
+    background-image: url('imgs/starsgif.gif');
+    background-repeat: no-repeat;
+    /*background-position: center;*/
+    background-size: cover;
+}

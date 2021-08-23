@@ -1,0 +1,53 @@
+﻿<!--<!DOCTYPE html>-->
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="game.css" rel="stylesheet" />
+
+
+    <script src="JavaScript.js"></script>
+
+</head>
+
+<body onload="startGame()" onkeydown="moveSelection(event)" onkeyup="moveSelection(event)">
+
+    <div id="game">
+       
+        <div id="score">score: <span id="nscore">0</span></div>
+        <img id="heart0"  src="imgs/heartGlow.png" />
+        <img id="heart1"  src="imgs/heartGlow.png" />
+        <img id="heart2"  src="imgs/heartGlow.png" />
+
+        <!--    <div id="image1" style="position: absolute; left: 15; right: 15; top: 15; bottom: auto;height:35px; width:35px;background-color:aqua "></div>-->
+
+        <div id="catch1"></div>
+        <center>
+            <div id="div_game" style="cursor:none">
+                <!--תופסן צורות בהזזת חיצי מקלדת-->         
+                <!--<div id="catch" style=" left: 60; top: 600;height:1vh; width:16vw;"></div>-->
+            </div>
+        </center>
+        <div id="windowShape">
+            The shape:
+           <img id="theShape" style="width: 8vw; margin-top: 3vh;" />
+        </div>
+        <div id="gameOver">
+
+
+            <!--<img src="imgs/ss.png" />-->
+           <img src="imgs/gameOver.png" />
+            <label> your score:</label>
+
+
+
+        </div>
+
+
+
+
+
+
+    </div>
+</body>
+</html>

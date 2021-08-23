@@ -1,0 +1,212 @@
+﻿body {
+    /*background-color:black;*/
+    /*background-image: url('imgs/purpleBricks.jpg');*/
+    /*background-image: url('imgs/pinkBricks.jpg');*/
+    /*background-image: url('imgs/blackBricks.jpg');*/
+    /*background-image: url('imgs/dd.jpg');*/
+    background-image: url('imgs/background.png');
+}
+
+/*אנימציה להורדת צורות מלמעלה למטה*/
+.ttbFall {
+    animation-name: falldown;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    transform: rotateY(180deg);
+}
+
+
+@keyframes falldown {
+    from {
+        margin-top: -20%;
+    }
+
+    to {
+        margin-top: 120%;
+    }
+}
+
+/*צורות*/
+.shape {
+    width: 100px;
+    height: 100px;
+}
+/*צורה בחלון לתפיסה*/
+/*#theShape {
+    width: 100px;
+    height: 100px;
+    margin-top:4vh;
+}*/
+/*דיב ציון*/
+#score {
+    background-image: url('imgs/score.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20vw;
+    height: 15vh;
+    top: 0vh;
+    padding-top: 12vh;
+    background-repeat: no-repeat;
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 26pt;
+    color: white;
+    float: right;
+    position: absolute;
+    text-align: center;
+}
+
+/*חיים לבבות*/
+#heart0{
+    width: 5vw;
+    height: 8vh;
+    top: 30vh;
+    left:5vh;
+    float: right;
+    position: absolute;
+}
+#heart1 {
+    width: 5vw;
+    height: 8vh;
+    top: 30vh;
+    left: 17vh;
+    float: right;
+    position: absolute;
+}
+#heart2 {
+    width: 5vw;
+    height: 8vh;
+    top: 30vh;
+    left: 29vh;
+    float: right;
+    position: absolute;
+}
+.heartBeat {
+    animation-name: heartBeat;
+    animation-duration: 1.7s;
+    animation-timing-function: ease-in-out;
+    width: 4vw;
+    height: 6vh;
+    position: absolute;
+    top: 3vh;
+}
+
+@keyframes heartBeat {
+    0% {
+        transform: scale(1);
+    }
+
+    14% {
+        transform: scale(1.3);
+    }
+
+    28% {
+        transform: scale(1);
+    }
+
+    42% {
+        transform: scale(1.3);
+    }
+
+    70% {
+        transform: scale(1);
+    }
+}
+
+/*#fdceff
+rgba(84, 216, 255,0.68)*/
+/*דיב תופס הצורות*/
+#catch {
+    width: 16vw;
+    height: 1vh;
+    border-right: solid 0.25vw #cefeff;
+    border-left: solid 0.25vw #cefeff;
+    border-bottom: solid 0.25vw #cefeff;
+    border-top: solid 0.25vw #cefeff;
+    box-shadow: rgba(84, 216, 255,0.68) 0 0px 30px 8px;
+    position: absolute;
+    background-position: center;
+    top: 600px;
+    left: 60px;
+}
+
+/*דיב מרכז מכיל את תחום המשחק*/
+#div_game {
+    width: 48vw;
+    height: 97vh;
+    border-right: solid 0.25vw #cefeff;
+    border-left: solid 0.25vw #cefeff;
+    box-shadow: rgba(84, 216, 255,0.68) 0px 0px 50px 1px;
+    background-position: center;
+}
+
+/*דיב הצורה שצריך לתפוס*/
+#windowShape {
+    width: 13vw;
+    height: 28vh;
+    background-image: url('Pictures/background.png');
+    box-shadow: rgba(84, 216, 255,0.68) 0 0px 30px 8px;
+    position: absolute;
+    right: 66px;
+    top: 80px;
+    padding-top: 3vh;
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 26pt;
+    color: white;
+    text-align: center;
+}
+/*דיב תופסן עכבר*/
+#catch1 {
+    width: 2vw;
+    height: 4vh;
+    z-index: 1;
+    border-right: solid 0.25vw #cefeff;
+    border-left: solid 0.25vw #cefeff;
+    border-bottom: solid 0.25vw #cefeff;
+    border-top: solid 0.25vw #cefeff;
+    box-shadow: rgba(84, 216, 255,0.68) 0 0px 30px 8px;
+    position: absolute;
+    border-radius: 50%
+}
+
+#gameOver {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.60);
+    z-index: 9;
+    display: none;
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 26pt;
+    color: white;
+    text-align: center;
+}
+#boom {
+    animation-name: Boom;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes Boom {
+    0% {
+        width: 0vw;
+        height: 0vh;
+    }
+
+    50% {
+        width: 9vw;
+        height: 14vh;
+    }
+
+    100% {
+        width: 0vw;
+        height: 0vh;
+    }
+}
