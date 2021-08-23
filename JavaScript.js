@@ -75,6 +75,8 @@ function catchShape(e) {
     //================GameOver=================================
     if (lives <= 0) {
         document.getElementById("gameOver").style.display = "unset";
+        document.getElementById("totalScore").innerHTML = score;
+        
     }
 }
 

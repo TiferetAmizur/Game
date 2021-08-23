@@ -187,6 +187,17 @@ rgba(84, 216, 255,0.68)*/
     color: white;
     text-align: center;
 }
+
+#gameOverImg {
+    /*left: 30%;
+    position: absolute;*/
+}
+
+#gameOverScore {
+    top: 70%;
+    left: 42%;
+    position: absolute;
+}
 #boom {
     animation-name: Boom;
     animation-duration: 1.5s;
